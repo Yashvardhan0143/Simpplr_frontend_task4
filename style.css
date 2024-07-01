@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary-bg-color: #161b22;
+  --secondary-bg-color: #0d1117;
+  --text-color: #fff;
+  --subtext-color: #545c66;
+  --border-color: #4a515d;
+  --highlight-color: #549ef3;
+  --secondary-highlight: #a3acbc;
+}
+
+body {
+  background: var(--secondary-bg-color);
+  font-family: Hubot-Sans, sans-serif;
+  font-weight: normal;
+}
+
+nav {
+  background: var(--primary-bg-color);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+ul li a {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+nav form {
+  width: 20%;
+}
+
+nav form input {
+  background: var(--secondary-bg-color);
+  padding: 7px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 100%;
+  color: var(--text-color);
+}
+
+nav form input::placeholder {
+  color: var(--text-color);
+}
+
+header {
+  border-bottom: 0.6px solid #242424;
+}
+
+.active {
+  border-bottom: 2px solid rgb(255, 102, 0);
+  padding-bottom: 20px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin: 20px;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  margin-left: 20px;
+}
+
+.btns-container a {
+  color: var(--text-color);
+}
+
+.btns-container button {
+  background: transparent;
+  border: 1px solid #585d63;
+  margin-left: 20px;
+  padding: 6px 20px;
+  color: var(--text-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+}
+
+.about-user {
+  width: 30%;
+  margin-left: 30px;
+  color: var(--text-color);
+}
+
+.about-user .user-avatar {
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  transform: translateY(-20px);
+  border-radius: 100%;
+}
+
+.user-name {
+  color: #585d63;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+button.follow {
+  width: 70%;
+  background: #21262d;
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 5px;
+  margin-bottom: 20px;
+}
+
+.followers-info {
+  margin: 15px 0;
+}
+
+.followers-info a {
+  color: var(--text-color);
+}
+
+.followers-info span {
+  color: var(--subtext-color);
+}
+
+.company,
+.location,
+.blog,
+.twitter_username {
+  margin: 10px 0;
+  color: #dce9f7;
+  font-size: 13px;
+}
+
+main {
+  color: var(--text-color);
+  margin-top: 20px;
+  margin-left: 1rem;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+.repo-card {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 43%;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  padding-top: 1.3rem;
+}
+
+.repo-title {
+  color: var(--highlight-color);
+  font-weight: 500;
+  margin-top: 3rem;
+  font-size: 13px;
+}
+
+.repo-subtitle {
+  font-size: 11px;
+  margin-top: 15px;
+  color: #868686;
+}
+
+.popularity {
+  display: flex;
+  color: #585c5e;
+}
+
+.stars {
+  margin-right: 20px;
+  color: #585c5e;
+}
+
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pill {
+  border: 1px solid var(--border-color);
+  color: var(--secondary-highlight);
+  width: 50px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.icon-container {
+  margin: 5px 0;
+}
+
+i {
+  color: var(--border-color);
+  margin-right: 5px;
+}
+
+.fa-github {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-right: 1rem;
+}
+
+section.fork {
+  display: flex;
+  align-items: center;
+}
+
+.fork-svg {
+  width: 14px;
+  margin-bottom: 20px;
+  margin-right: 6px;
+}
